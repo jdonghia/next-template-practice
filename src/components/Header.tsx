@@ -7,25 +7,25 @@ import {
 } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
-import Logo from "@/public/assets/svgs/logo.svg";
+import Logo from "/public/assets/svgs/logo.svg";
 
 export function Header() {
   return (
     <header>
-      <div className="bg-custom-black text-white text-sm py-4 flex justify-around">
+      <div className="flex justify-around bg-custom-black py-4 text-sm text-white">
         <div className="flex gap-4">
           <p className="flex gap-2">
-            <IoLocationOutline className="text-custom-blue font-bold text-xl" />
+            <IoLocationOutline className="text-xl font-bold text-custom-blue" />
             24 Olive Street, Prairie, NY 53590
           </p>
           <p className="flex gap-2">
-            <AiOutlineMail className="text-custom-blue font-bold text-xl" />
+            <AiOutlineMail className="text-xl font-bold text-custom-blue" />
             whitecollar@gmail.com
           </p>
         </div>
         <div className="flex items-center gap-11">
           <p className="flex gap-2">
-            <AiOutlineClockCircle className="text-custom-blue font-bold text-xl" />
+            <AiOutlineClockCircle className="text-xl font-bold text-custom-blue" />
             Mon - Fri: 8:00 am - 5:00 pm
           </p>
           <ul className="flex items-center gap-3">
@@ -44,9 +44,9 @@ export function Header() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-around my-8 w-11/12 mx-auto items-center">
+      <div className="mx-auto my-8 flex w-11/12 items-center justify-around">
         <Logo />
-        <ul className="flex text-lg items-center gap-7">
+        <ul className="flex items-center gap-10 text-lg">
           <li>Home</li>
           <li>About Us</li>
           <li>Pages</li>
@@ -54,7 +54,7 @@ export function Header() {
           <li>Blog</li>
           <li>Contact Us</li>
           <li>
-            <button className="bg-custom-purple p-4 rounded text-white">
+            <button className="rounded bg-custom-purple p-4 text-white">
               Get Consulting
             </button>
           </li>
